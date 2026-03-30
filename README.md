@@ -14,8 +14,8 @@ A fully self-hosted, on-premise AI platform for intelligent document retrieval a
 [![Deployment](https://img.shields.io/badge/Deployment-Docker%20%7C%20Self--Hosted-orange?style=flat-square)]()
 
 </div>
-
----
+## 🏗️ Architecture
+![System Architecture](system-architecture.svg)
 
 ## 📋 Table of Contents
 
