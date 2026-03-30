@@ -1,0 +1,131 @@
+# ============================================================
+# Badir Legal AI Platform — .gitignore
+# ============================================================
+
+# ─── SECRETS & ENVIRONMENT ───────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+credentials/
+
+# ─── NODE.JS ─────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn
+
+# ─── NEXT.JS ─────────────────────────────────────────────────
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel
+frontend/next-env.d.ts
+
+# ─── PM2 ─────────────────────────────────────────────────────
+.pm2/
+*.pid
+ecosystem.config.local.js
+
+# ─── PYTHON ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ─── DOCKER ──────────────────────────────────────────────────
+# Keep docker-compose.yml but ignore overrides with secrets
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# ─── DATABASES & VOLUMES ─────────────────────────────────────
+*.sql.gz
+*.dump
+pgdata/
+qdrant_storage/
+redis_data/
+uploads/
+backups/*.tar.gz
+
+# ─── LOGS ────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+npm-debug.log
+pm2-*.log
+
+# ─── DOCUMENTS (never commit client documents) ───────────────
+docs_source/
+documents/
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+# Exception: keep sample/template docs if any
+!docs/samples/*.pdf
+
+# ─── AI MODELS ───────────────────────────────────────────────
+# Ollama models are pulled at runtime — never commit
+models/
+*.gguf
+*.bin
+*.ggml
+
+# ─── IDE & EDITORS ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── OS ──────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+ehthumbs.db
+[Dd]esktop.ini
+
+# ─── TESTING ─────────────────────────────────────────────────
+coverage/
+.nyc_output/
+test-results/
+
+# ─── TEMPORARY ───────────────────────────────────────────────
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.orig
+
+# ─── N8N ─────────────────────────────────────────────────────
+# Only export workflow JSON files — never commit n8n internal DB
+n8n/data/
+n8n/.n8n/
+
+# ─── NEXTCLOUD ───────────────────────────────────────────────
+nextcloud/data/
+nextcloud/config/
+
+# ─── TYPESCRIPT ──────────────────────────────────────────────
+*.tsbuildinfo
+tsconfig.tsbuildinfo
