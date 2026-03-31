@@ -5,7 +5,7 @@ Do not attempt unverified solutions — follow these exactly.
 
 ---
 
-## 🔴 Critical Issues
+##  Critical Issues
 
 ### 1. Backend crashes immediately after PM2 start
 
@@ -37,13 +37,13 @@ pm2 startup
 
 **Verified Fix** (in `routes/legal.js`):
 ```javascript
-// ✅ CORRECT — wrap sources with JSON.stringify()
+//  CORRECT — wrap sources with JSON.stringify()
 await pool.query(
   'INSERT INTO auth.conversations (user_id, question, answer, sources) VALUES ($1, $2, $3, $4)',
   [userId, question, answer, JSON.stringify(sources)]
 );
 
-// ❌ WRONG — do not pass sources directly
+//  WRONG — do not pass sources directly
 // VALUES ($1, $2, $3, $4) with sources as array object
 ```
 
@@ -57,11 +57,11 @@ await pool.query(
 
 **Verified Fix:** Always use Docker container names inside n8n:
 ```
-# ✅ CORRECT
+#  CORRECT
 http://qdrant:6333
 http://ollama:11434
 
-# ❌ WRONG
+#  WRONG
 http://localhost:6333
 http://localhost:11434
 http://127.0.0.1:6333
@@ -77,7 +77,7 @@ http://127.0.0.1:6333
 
 **Verified Fix:** Use the native `fetch()` API in all Code nodes:
 ```javascript
-// ✅ CORRECT
+//  CORRECT
 const response = await fetch('http://qdrant:6333/collections/account_legal_docs/points/search', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -85,7 +85,7 @@ const response = await fetch('http://qdrant:6333/collections/account_legal_docs/
 });
 const data = await response.json();
 
-// ❌ WRONG
+//  WRONG
 const data = await $http.request({ ... });
 ```
 
@@ -116,10 +116,10 @@ Do not set `num_ctx` above 2048 on this server configuration.
 
 **Verified Fix:** The Build Context node must read `item.payload.text` (not `item.text`) from Qdrant results:
 ```javascript
-// ✅ CORRECT — read from payload
+//  CORRECT — read from payload
 const context = results.map(item => item.payload.text).join('\n\n');
 
-// ❌ WRONG
+//  WRONG
 const context = results.map(item => item.text).join('\n\n');
 ```
 
@@ -159,7 +159,7 @@ nano /var/www/html/config/config.php
 
 ---
 
-## 🟡 Common Warnings
+##  Common Warnings
 
 ### Score threshold too low / too high
 
@@ -171,16 +171,16 @@ nano /var/www/html/config/config.php
 
 The n8n webhook URL must be the **production webhook** (not the test webhook):
 ```
-# ✅ Production
+#  Production
 http://localhost:5678/webhook/YOUR_WEBHOOK_ID
 
-# ❌ Test only — doesn't persist
+#  Test only — doesn't persist
 http://localhost:5678/webhook-test/YOUR_WEBHOOK_ID
 ```
 
 ---
 
-## 🔍 Diagnostic Commands
+##  Diagnostic Commands
 
 ```bash
 # Check all PM2 processes
