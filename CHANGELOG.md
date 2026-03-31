@@ -6,7 +6,7 @@ All notable changes to this project are documented here.
 
 ## [1.0.0] — 2025-Q1 — Initial Production Release
 
-### 🎉 Core Platform
+###  Core Platform
 - Full self-hosted RAG pipeline with Qdrant + Ollama
 - n8n workflow `Badir-Legal-RAG-Hybrid-v3` — stable production version
 - Node.js/Express backend (port 3001) managed by PM2
@@ -14,7 +14,7 @@ All notable changes to this project are documented here.
 - PostgreSQL 15 for auth, RBAC, and history
 - Redis for session management
 
-### 🧠 AI / RAG
+###  AI / RAG
 - LLM: `qwen2.5:3b` via Ollama (on-premise, no cloud)
 - Embeddings: `nomic-embed-text` via Ollama
 - Qdrant collection `account_legal_docs` with 700+ indexed points
@@ -23,13 +23,13 @@ All notable changes to this project are documented here.
 - Source metadata preserved and surfaced to frontend
 - Irrelevant source suppression on negative LLM responses
 
-### 👥 Auth & RBAC
+###  Auth & RBAC
 - Role-based access: admin / manager / supervisor / employee
 - Department isolation: legal / hr / engineering
 - Cross-department guidance for privileged roles
 - JWT + session-based authentication
 
-### 📱 Frontend
+###  Frontend
 - Mobile-first responsive layout
 - Hamburger menu with overlay drawer
 - Sticky header with session info
@@ -40,7 +40,7 @@ All notable changes to this project are documented here.
 - Full RTL support for Arabic
 - i18n: Arabic, English, French
 
-### 🏗️ Infrastructure
+###  Infrastructure
 - Fully Dockerized (all services containerized)
 - Cloudflare Zero Trust tunnel — domain: `dashboard.badir-it.online`
 - Nextcloud document storage (port 8080)
