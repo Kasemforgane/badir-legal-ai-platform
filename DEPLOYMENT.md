@@ -1,4 +1,4 @@
-# 🚀 Deployment Guide — Badir Legal AI Platform
+#  Deployment Guide — Badir Legal AI Platform
 
 This guide covers production deployment on a fresh Ubuntu server.
 
