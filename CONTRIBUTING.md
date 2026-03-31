@@ -4,7 +4,7 @@ Internal engineering guidelines for the Badir IT Solutions development team.
 
 ---
 
-## 🔒 Core Rules (Non-Negotiable)
+##  Core Rules (Non-Negotiable)
 
 1. **Verified solutions only** — No random experiments on production. Test with `curl` before applying to n8n or any live service.
 2. **No breaking changes** to working features — always check impact before modifying shared code.
@@ -15,7 +15,7 @@ Internal engineering guidelines for the Badir IT Solutions development team.
 
 ---
 
-## 🌿 Branch Strategy
+##  Branch Strategy
 
 ```
 main          → Production-ready code only
@@ -27,7 +27,7 @@ docs/*        → Documentation updates only
 
 ---
 
-## 📝 Commit Message Format
+##  Commit Message Format
 
 ```
 type(scope): short description
@@ -43,7 +43,7 @@ docs(deployment): add Cloudflare Zero Trust setup steps
 
 ---
 
-## 🧪 Before Merging to Main
+##  Before Merging to Main
 
 - [ ] All PM2 processes running without errors: `pm2 list`
 - [ ] Backend health check passes: `curl localhost:3001/api/health`
@@ -55,7 +55,7 @@ docs(deployment): add Cloudflare Zero Trust setup steps
 
 ---
 
-## 🗺️ Key Technical Constraints
+##  Key Technical Constraints
 
 | Constraint | Value | Reason |
 |---|---|---|
@@ -68,7 +68,7 @@ docs(deployment): add Cloudflare Zero Trust setup steps
 
 ---
 
-## 📞 Engineering Contact
+##  Engineering Contact
 
 Lead Engineer: Systems & AI Platform Team
 Organization: Badir IT Solutions, Tripoli, Libya
