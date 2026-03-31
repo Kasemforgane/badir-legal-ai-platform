@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Badir%20IT%20Solutions-Legal%20AI%20Platform-1a1a2e?style=for-the-badge&logo=scales&logoColor=white" alt="Badir Legal AI" />
 
-# ⚖️ Badir Legal AI Platform
+#  Badir Legal AI Platform
 
 **منصة الذكاء الاصطناعي القانونية — بادر للاتصالات وتقنية المعلومات**
 
@@ -14,10 +14,10 @@ A fully self-hosted, on-premise AI platform for intelligent document retrieval a
 [![Deployment](https://img.shields.io/badge/Deployment-Docker%20%7C%20Self--Hosted-orange?style=flat-square)]()
 
 </div>
-## 🏗️ Architecture
+##  Architecture
 ![System Architecture](system-architecture.svg)
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -34,7 +34,7 @@ A fully self-hosted, on-premise AI platform for intelligent document retrieval a
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 The **Badir Legal AI Platform** is a production-grade, fully on-premise Retrieval-Augmented Generation (RAG) system designed for enterprise use. It enables employees to query internal legal documents, HR policies, and engineering references using natural language — in Arabic, English, or French — with answers grounded exclusively in the organization's own knowledge base.
 
@@ -44,22 +44,22 @@ The **Badir Legal AI Platform** is a production-grade, fully on-premise Retrieva
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Description |
 |---|---|
-| 🧠 **On-Premise RAG** | All AI processing runs locally — zero external API calls |
-| 🌍 **Multilingual** | Full support for Arabic (RTL), English, and French |
-| 🔐 **Role-Based Access** | Admin / Manager / Supervisor / Employee tiers with department isolation |
-| 📄 **Source Highlighting** | Answers link directly to PDF pages with text highlighting |
-| 📱 **Mobile-First UI** | Responsive design with hamburger menu and overlay drawer |
-| 🏢 **Cross-Department** | Unified platform for Legal, HR, and Engineering documents |
-| 🔄 **Conversation History** | Full session persistence with auto-save |
-| 🐳 **Fully Dockerized** | One-command deployment for new clients |
+|  **On-Premise RAG** | All AI processing runs locally — zero external API calls |
+|  **Multilingual** | Full support for Arabic (RTL), English, and French |
+|  **Role-Based Access** | Admin / Manager / Supervisor / Employee tiers with department isolation |
+|  **Source Highlighting** | Answers link directly to PDF pages with text highlighting |
+|  **Mobile-First UI** | Responsive design with hamburger menu and overlay drawer |
+|  **Cross-Department** | Unified platform for Legal, HR, and Engineering documents |
+|  **Conversation History** | Full session persistence with auto-save |
+|  **Fully Dockerized** | One-command deployment for new clients |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -98,7 +98,7 @@ The **Badir Legal AI Platform** is a production-grade, fully on-premise Retrieva
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### AI / RAG Layer
 | Component | Technology | Purpose |
@@ -127,19 +127,19 @@ The **Badir Legal AI Platform** is a production-grade, fully on-premise Retrieva
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 badir-legal-ai/
 │
-├── 📄 README.md                    # This file
-├── 📄 .gitignore                   # Git ignore rules
-├── 📄 .env.example                 # Environment template (no secrets)
-├── 📄 docker-compose.yml           # Full service orchestration
-├── 📄 DEPLOYMENT.md                # Step-by-step deployment guide
-├── 📄 CHANGELOG.md                 # Version history
+├──  README.md                    # This file
+├──  .gitignore                   # Git ignore rules
+├──  .env.example                 # Environment template (no secrets)
+├──  docker-compose.yml           # Full service orchestration
+├──  DEPLOYMENT.md                # Step-by-step deployment guide
+├──  CHANGELOG.md                 # Version history
 │
-├── 🗂️ backend/                     # Node.js / Express API server
+├──  backend/                     # Node.js / Express API server
 │   ├── src/
 │   │   ├── routes/
 │   │   │   ├── auth.js             # Login, register, change-password
@@ -152,7 +152,7 @@ badir-legal-ai/
 │   ├── package.json
 │   └── ecosystem.config.js         # PM2 configuration
 │
-├── 🗂️ frontend/                    # Next.js 16 application
+├──  frontend/                    # Next.js 16 application
 │   ├── app/
 │   │   ├── (auth)/                 # Login / register pages
 │   │   ├── (protected)/            # Authenticated routes
@@ -168,19 +168,19 @@ badir-legal-ai/
 │   ├── package.json
 │   └── next.config.js
 │
-├── 🗂️ scripts/                     # Operational utilities
+├──  scripts/                     # Operational utilities
 │   ├── bulk_ingest.py              # Document indexing pipeline
 │   ├── setup.sh                    # Fresh server setup script
 │   └── backup.sh                   # Database + vector backup
 │
-├── 🗂️ n8n/
+├──  n8n/
 │   └── workflows/
 │       └── Badir-Legal-RAG-Hybrid-v3.json   # n8n RAG workflow export
 │
-├── 🗂️ nginx/
+├──  nginx/
 │   └── nginx.conf                  # Reverse proxy config (optional)
 │
-└── 🗂️ docs/
+└──  docs/
     ├── architecture.md             # Deep-dive system architecture
     ├── api-reference.md            # All API endpoints documented
     ├── rbac-model.md               # Role & permission matrix
@@ -190,7 +190,7 @@ badir-legal-ai/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -265,7 +265,7 @@ Open your browser at `http://YOUR_SERVER_IP:3000`
 
 ---
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 Copy `.env.example` to `.env` and fill in the values:
 
@@ -300,11 +300,11 @@ NEXTCLOUD_USER=admin
 NEXTCLOUD_PASSWORD=your_nextcloud_password
 ```
 
-> ⚠️ **Never commit `.env` to version control.** Only `.env.example` (with no real values) should be in the repo.
+>  **Never commit `.env` to version control.** Only `.env.example` (with no real values) should be in the repo.
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Authentication
 
@@ -334,7 +334,7 @@ NEXTCLOUD_PASSWORD=your_nextcloud_password
 
 ---
 
-## 🔐 Role-Based Access
+##  Role-Based Access
 
 ```
 ┌──────────────┬──────────────────────────────────────────────────┐
@@ -356,7 +356,7 @@ Roles are assigned at user creation and control:
 
 ---
 
-## 🐳 Deployment
+##  Deployment
 
 See **[DEPLOYMENT.md](DEPLOYMENT.md)** for the full production deployment guide including:
 
@@ -369,7 +369,7 @@ See **[DEPLOYMENT.md](DEPLOYMENT.md)** for the full production deployment guide 
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] White-label Docker template for new clients
 - [ ] Server migration automation script
@@ -380,22 +380,22 @@ See **[DEPLOYMENT.md](DEPLOYMENT.md)** for the full production deployment guide 
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 This is a proprietary project maintained by Badir IT Solutions. Internal contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-## 📞 Contact
+##  Contact
 
 **Badir IT Solutions**
 بادر المتميزة للاتصالات وتقنية المعلومات
-📍 Tripoli, Libya
-🌐 [badir-it.online](https://badir-it.online)
+ Tripoli, Libya
+ [https://badir-it.ly/ar ](https://badir-it.ly/en/)
 
 ---
 
-## 📜 License
+##  License
 
 **Proprietary & Confidential**
 
@@ -406,5 +406,5 @@ This software is the intellectual property of Badir IT Solutions. Unauthorized c
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by the Badir IT Solutions engineering team</sub>
+  <sub>Built with  by the Badir IT Solutions engineering team</sub>
 </div>
