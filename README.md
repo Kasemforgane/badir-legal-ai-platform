@@ -33,6 +33,11 @@ A fully self-hosted, on-premise AI platform for intelligent document retrieval a
 - [License](#-license)
 
 ---
+##  Demo Video
+
+[![Badir Legal AI Platform Demo](https://img.youtube.com/vi/0w_4xdM98qE/maxresdefault.jpg)](https://youtu.be/0w_4xdM98qE)
+
+> Click the image to watch the full demo — Arabic / English / French multilingual demonstration with PDF source highlighting.
 
 ##  Overview
 
