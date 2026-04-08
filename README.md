@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Badir%20IT%20Solutions-Legal%20AI%20Platform-1a1a2e?style=for-the-badge&logo=scales&logoColor=white" alt="Badir Legal AI" />
+<img src="https://img.shields.io/badge/Badir%20IT%20Services-Legal%20AI%20Platform-1a1a2e?style=for-the-badge&logo=scales&logoColor=white" alt="Badir Legal AI" />
 
 #  Badir Legal AI Platform
 
@@ -45,7 +45,7 @@ The **Badir Legal AI Platform** is a production-grade, fully on-premise Retrieva
 
 **No cloud. No data leakage. Total control.**
 
-> Built and maintained by **Badir IT Solutions** (بادر المتميزة للاتصالات وتقنية المعلومات), Tripoli, Libya.
+> Built and maintained by **Badir IT Services** (بادر المتميزة للاتصالات وتقنية المعلومات), Tripoli, Libya.
 
 ---
 
@@ -393,7 +393,7 @@ This is a proprietary project maintained by Badir IT Solutions. Internal contrib
 
 ##  Contact
 
-**Badir IT Solutions**
+**Badir IT Services**
 بادر المتميزة للاتصالات وتقنية المعلومات
  Tripoli, Libya
  [https://badir-it.ly/ar ](https://badir-it.ly/en/)
@@ -411,5 +411,5 @@ This software is the intellectual property of Badir IT Solutions. Unauthorized c
 ---
 
 <div align="center">
-  <sub>Built with  by the Badir IT Solutions engineering team</sub>
+  <sub>Built with  by the Badir IT Services engineering team</sub>
 </div>
