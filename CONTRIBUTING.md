@@ -1,6 +1,6 @@
 # Contributing — Badir Legal AI Platform
 
-Internal engineering guidelines for the Badir IT Solutions development team.
+Internal engineering guidelines for the Badir IT Services development team.
 
 ---
 
@@ -71,4 +71,4 @@ docs(deployment): add Cloudflare Zero Trust setup steps
 ##  Engineering Contact
 
 Lead Engineer: Systems & AI Platform Team
-Organization: Badir IT Solutions, Tripoli, Libya
+Organization: Badir IT Services, Tripoli, Libya
